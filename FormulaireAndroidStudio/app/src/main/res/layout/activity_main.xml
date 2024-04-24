@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre" />
+
+    <EditText
+        android:id="@+id/editTextApellido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNombre"
+        android:hint="Apellido" />
+
+    <EditText
+        android:id="@+id/editTextEdad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextApellido"
+        android:hint="Edad" />
+
+    <EditText
+        android:id="@+id/editTextNombrePadre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEdad"
+        android:hint="Nombre del Padre" />
+
+    <EditText
+        android:id="@+id/editTextNombreMadre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNombrePadre"
+        android:hint="Nombre de la Madre" />
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNombreMadre"
+        android:text="Añadir" />
+
+    <Button
+        android:id="@+id/buttonView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonAdd"
+        android:text="Ver" />
+
+    <Button
+        android:id="@+id/buttonEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonView"
+        android:text="Editar" />
+
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonEdit"
+        android:text="Borrar" />
+
+</RelativeLayout>
